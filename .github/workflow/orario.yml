@@ -1,0 +1,27 @@
+name: Aggiorna orario
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # ogni giorno alle 05:00 UTC (6:00/7:00 in Italia)
+  workflow_dispatch:       # ti permette di lanciarlo a mano dal sito
+
+permissions:
+  contents: write
+
+jobs:
+  aggiorna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests icalendar
+      - run: python scraper.py
+      - name: Salva i file aggiornati
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add lezioni.ics stato.json
+          git diff --staged --quiet || git commit -m "Aggiorna orario"
+          git push
