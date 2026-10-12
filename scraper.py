@@ -5,8 +5,8 @@ from icalendar import Calendar, Event
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
+CODICI = None  # None = tutte le materie; oppure un insieme, es. {"EC674433", "EC123456"}
 FUSO = ZoneInfo("Europe/Rome")
-CODICE_INSEGNAMENTO = "EC674433"
 URL = "https://aule.unife.it/AgendaStudenti/grid_call.php"
 SETTIMANE = 8
 FILE_STATO = Path("stato.json")
@@ -31,11 +31,12 @@ def scarica_celle(data):
 
 
 def filtra_lezioni(celle):
-    """Tiene solo le celle del tuo insegnamento, non annullate."""
+    """Tiene le lezioni non annullate (di tutte le materie, o solo dei CODICI scelti)."""
     return [
         c for c in celle
-        if c.get("codice_insegnamento") == CODICE_INSEGNAMENTO
+        if c.get("codice_insegnamento")
         and c.get("Annullato") == "0"
+        and (CODICI is None or c["codice_insegnamento"] in CODICI)
     ]
 
 
@@ -44,13 +45,14 @@ def crea_evento(cella):
     formato = "%d-%m-%Y %H:%M"
     inizio = datetime.strptime(f'{cella["data"]} {cella["ora_inizio"]}', formato).replace(tzinfo=FUSO)
     fine = datetime.strptime(f'{cella["data"]} {cella["ora_fine"]}', formato).replace(tzinfo=FUSO)
+    codice = cella["codice_insegnamento"]
 
     evento = Event()
     evento.add("summary", cella["nome_insegnamento"])
     evento.add("dtstart", inizio)
     evento.add("dtend", fine)
     evento.add("dtstamp", datetime.now(FUSO))
-    evento.add("uid", f"{CODICE_INSEGNAMENTO}-{inizio:%Y%m%dT%H%M}@unife-orario")
+    evento.add("uid", f"{codice}-{inizio:%Y%m%dT%H%M}@unife-orario")
     return evento
 
 
@@ -60,7 +62,9 @@ def raccogli_eventi():
     giorno = date.today()
     for _ in range(SETTIMANE):
         celle = scarica_celle(giorno.strftime("%d-%m-%Y"))
-        for cella in filtra_lezioni(celle):
+        lezioni = filtra_lezioni(celle)
+        print(giorno, "celle totali:", len(celle), "| lezioni tenute:", len(lezioni))
+        for cella in lezioni:
             evento = crea_evento(cella)
             eventi[str(evento["uid"])] = evento
         giorno += timedelta(days=7)
