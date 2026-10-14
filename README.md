@@ -30,7 +30,7 @@ pip install requests icalendar
 ## Utilizzo
 
 ```bash
-python main.py
+python scraper.py
 ```
 
 > Sostituisci `main.py` con il nome effettivo del tuo script.
