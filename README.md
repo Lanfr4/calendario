@@ -36,12 +36,3 @@ python main.py
 > Sostituisci `main.py` con il nome effettivo del tuo script.
 
 Al termine viene generato il file `.ics` con le lezioni.
-
-## Configurazione
-
-Gli insegnamenti da includere si scelgono tramite il loro codice (ad esempio `EC674433`). Per aggiungere altre materie basta inserire i rispettivi codici nell'elenco dello script.
-
-## Iscriversi al calendario
-
-1. Apri Google Calendar dal computer.
-2. Vai su
