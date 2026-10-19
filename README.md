@@ -32,7 +32,4 @@ pip install requests icalendar
 ```bash
 python scraper.py
 ```
-
-> Sostituisci `main.py` con il nome effettivo del tuo script.
-
 Al termine viene generato il file `.ics` con le lezioni.
