@@ -1,49 +1,4 @@
 {
-  "EC674439-20261012T1130@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-10-12T11:30",
-    "fine": "13:30"
-  },
-  "EC674442-20261012T1500@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-10-12T15:00",
-    "fine": "17:00"
-  },
-  "EC674439-20261013T1200@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-10-13T12:00",
-    "fine": "15:00"
-  },
-  "EC674442-20261013T1500@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-10-13T15:00",
-    "fine": "18:00"
-  },
-  "EC674433-20261014T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-10-14T08:30",
-    "fine": "11:30"
-  },
-  "EC674439-20261014T1130@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-10-14T11:30",
-    "fine": "13:30"
-  },
-  "EC674433-20261015T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-10-15T08:30",
-    "fine": "11:00"
-  },
-  "EC674442-20261015T1100@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-10-15T11:00",
-    "fine": "13:00"
-  },
-  "EC674439-20261015T1400@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-10-15T14:00",
-    "fine": "16:00"
-  },
   "EC674433-20261019T0830@unife-orario": {
     "titolo": "SISTEMI OPERATIVI E LABORATORIO",
     "inizio": "2026-10-19T08:30",
@@ -343,5 +298,40 @@
     "titolo": "BASI DI DATI E LABORATORIO",
     "inizio": "2026-12-03T11:00",
     "fine": "13:00"
+  },
+  "EC674433-20261209T0830@unife-orario": {
+    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
+    "inizio": "2026-12-09T08:30",
+    "fine": "11:30"
+  },
+  "EC674439-20261209T1130@unife-orario": {
+    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
+    "inizio": "2026-12-09T11:30",
+    "fine": "13:30"
+  },
+  "EC674433-20261210T0830@unife-orario": {
+    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
+    "inizio": "2026-12-10T08:30",
+    "fine": "11:30"
+  },
+  "EC674439-20261210T1130@unife-orario": {
+    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
+    "inizio": "2026-12-10T11:30",
+    "fine": "13:30"
+  },
+  "EC674442-20261210T1430@unife-orario": {
+    "titolo": "BASI DI DATI E LABORATORIO",
+    "inizio": "2026-12-10T14:30",
+    "fine": "16:30"
+  },
+  "EC674439-20261211T1300@unife-orario": {
+    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
+    "inizio": "2026-12-11T13:00",
+    "fine": "15:00"
+  },
+  "EC674442-20261211T1500@unife-orario": {
+    "titolo": "BASI DI DATI E LABORATORIO",
+    "inizio": "2026-12-11T15:00",
+    "fine": "18:00"
   }
 }
