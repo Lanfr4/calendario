@@ -49,11 +49,6 @@
     "inizio": "2026-10-29T14:00",
     "fine": "16:00"
   },
-  "EC674433-20261105T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-11-05T08:30",
-    "fine": "11:00"
-  },
   "EC674442-20261106T0900@unife-orario": {
     "titolo": "BASI DI DATI E LABORATORIO",
     "inizio": "2026-11-06T09:00",
@@ -73,6 +68,11 @@
     "titolo": "BASI DI DATI E LABORATORIO",
     "inizio": "2026-11-09T15:00",
     "fine": "17:00"
+  },
+  "EC674433-20261110T0830@unife-orario": {
+    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
+    "inizio": "2026-11-10T08:30",
+    "fine": "11:30"
   },
   "EC674439-20261110T1300@unife-orario": {
     "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
