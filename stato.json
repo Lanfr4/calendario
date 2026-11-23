@@ -1,54 +1,4 @@
 {
-  "EC674433-20261116T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-11-16T08:30",
-    "fine": "11:30"
-  },
-  "EC674439-20261116T1130@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-11-16T11:30",
-    "fine": "13:30"
-  },
-  "EC674442-20261116T1500@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-11-16T15:00",
-    "fine": "17:00"
-  },
-  "EC674439-20261117T1300@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-11-17T13:00",
-    "fine": "15:00"
-  },
-  "EC674442-20261117T1500@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-11-17T15:00",
-    "fine": "18:00"
-  },
-  "EC674433-20261118T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-11-18T08:30",
-    "fine": "11:30"
-  },
-  "EC674439-20261118T1130@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-11-18T11:30",
-    "fine": "13:30"
-  },
-  "EC674433-20261119T0830@unife-orario": {
-    "titolo": "SISTEMI OPERATIVI E LABORATORIO",
-    "inizio": "2026-11-19T08:30",
-    "fine": "11:00"
-  },
-  "EC674442-20261119T1100@unife-orario": {
-    "titolo": "BASI DI DATI E LABORATORIO",
-    "inizio": "2026-11-19T11:00",
-    "fine": "13:00"
-  },
-  "EC674439-20261119T1400@unife-orario": {
-    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
-    "inizio": "2026-11-19T14:00",
-    "fine": "16:00"
-  },
   "EC674439-20261123T1130@unife-orario": {
     "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
     "inizio": "2026-11-23T11:30",
@@ -143,6 +93,11 @@
     "titolo": "BASI DI DATI E LABORATORIO",
     "inizio": "2026-12-03T11:00",
     "fine": "13:00"
+  },
+  "EC674439-20261203T1400@unife-orario": {
+    "titolo": "LINGUAGGI DI PROGRAMMAZIONE E LABORATORIO",
+    "inizio": "2026-12-03T14:00",
+    "fine": "16:00"
   },
   "EC674433-20261209T0830@unife-orario": {
     "titolo": "SISTEMI OPERATIVI E LABORATORIO",
