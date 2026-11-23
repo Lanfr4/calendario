@@ -5,7 +5,7 @@ from icalendar import Calendar, Event
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
-CODICI = None  # None = tutte le materie; oppure un insieme, es. {"EC674433", "EC123456"}
+CODICI = None  
 FUSO = ZoneInfo("Europe/Rome")
 URL = "https://aule.unife.it/AgendaStudenti/grid_call.php"
 SETTIMANE = 8
